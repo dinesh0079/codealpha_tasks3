@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Login Form -->
+  <div class="login-container" id="login-container">
+    <h1>Welcome to Social Media Dashboard</h1>
+    <input type="text" id="username" placeholder="Enter your username" required>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="dashboard-container" id="dashboard-container" style="display:none;">
+    <div class="sidebar">
+      <h3>Social Media Dashboard</h3>
+      <ul>
+        <li onclick="showFeed('twitter')">Twitter</li>
+        <li onclick="showFeed('facebook')">Facebook</li>
+        <li onclick="showFeed('instagram')">Instagram</li>
+        <li onclick="showFeed('linkedin')">LinkedIn</li>
+      </ul>
+    </div>
+    
+    <div class="main-content">
+      <h2>Feed</h2>
+      <div id="feed-container"></div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
